@@ -1,0 +1,192 @@
+Cmp-Mod V01 Created by CvPCB (2011-08-12 BZR 3067)-stable date = Qui 10 Nov 2011 00:48:31 BRT
+
+BeginCmp
+TimeStamp = /4EA2D2D9;
+Reference = C101;
+ValeurCmp = 10u;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2D615;
+Reference = C102;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CF2D;
+Reference = C103;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD78;
+Reference = D101;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD7F;
+Reference = D102;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD83;
+Reference = D103;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD85;
+Reference = D104;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD8A;
+Reference = D105;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD8D;
+Reference = D106;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CD8F;
+Reference = D107;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB2DAF1;
+Reference = JMP101;
+ValeurCmp = JUMPER1;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB2DAFC;
+Reference = JMP102;
+ValeurCmp = JUMPER1;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB2DF4A;
+Reference = JMP103;
+ValeurCmp = JUMPER1;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2D265;
+Reference = P101;
+ValeurCmp = CONN_8;
+IdModule  = Conectores-IDC10;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDBB;
+Reference = R101;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDBE;
+Reference = R102;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDC1;
+Reference = R103;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDC4;
+Reference = R104;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDC7;
+Reference = R105;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDC9;
+Reference = R106;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDCE;
+Reference = R107;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CF56;
+Reference = R108;
+ValeurCmp = 4.7k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2D1C5;
+Reference = R109;
+ValeurCmp = 10k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB2DEC7;
+Reference = R110;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2D1DE;
+Reference = R111;
+ValeurCmp = 10k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2CDFC;
+Reference = U101;
+ValeurCmp = 74HC595;
+IdModule  = SO16E;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA2D1A8;
+Reference = X101;
+ValeurCmp = ROTENC;
+IdModule  = Misc-EC12E2420404;
+EndCmp
+
+EndListe

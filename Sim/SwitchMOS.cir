@@ -1,0 +1,51 @@
+regulador chaveado com mosfet
+
+.include mc34063.lib
+.include modelos.lib
+.include 1n5819.lib
+.include fdd4141.lib
+
+*Tensão de entrada
+
+V_UNREG VUNREG 0 24V
+
+*Regulador
+
+XREG VDRV 0 VCT 0 VFB VUNREG VIPK VDRV mc34063
+
+*Capacitor de timing
+
+Ct VCT 0 470p
+
+*Feedback
+
+Rfb1 VOUT VFB 6.34k 
+Rfb2 VFB 0 1k
+
+*Driver MOSFET
+
+QH VIPK VDRV VMOS 2N3904
+QL 0    VDRV VMOS 2N3904
+
+Rpu VDRV VIPK 1k
+
+*MOSFET
+
+XMOS VSW VDRV VIPK FDD4141
+
+*Filtragem
+
+Dx 0 VSW D1N5819
+
+Lp VSW VOUT 68u
+Cp VOUT 0   470u
+
+*Análise
+.control
+
+tran 1u 200m
+
+plot v(VOUT)
+
+.endc
+.end

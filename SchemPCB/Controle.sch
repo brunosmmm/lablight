@@ -1,0 +1,533 @@
+EESchema Schematic File Version 2  date Qui 19 Abr 2012 11:39:50 BRT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Capacitores
+LIBS:CircuitosIntegrados
+LIBS:Conectores
+LIBS:Cristais
+LIBS:Diodos
+LIBS:Leds
+LIBS:Misc
+LIBS:Resistores
+LIBS:Transistores
+LIBS:LabLight-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 3 4
+Title ""
+Date "19 apr 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 10050 2400 0    60   ~ 0
+Barramento de controle\ndo display e entrada
+Text Notes 3200 1850 0    60   ~ 0
+Comunicação I2C para controle remoto
+Text Notes 4500 6400 0    60   ~ 0
+Conector de programação
+Text Notes 3200 1750 0    60   ~ 0
+Conversão de nível I2C 5 V <-> 3.3 V
+Text Notes 6800 2200 0    60   ~ 0
+Duas entradas analógicas para expansão
+Text Notes 10100 7300 0    60   ~ 12
+Bruno Morais\nbrunosmmm@gmail.com
+$Comp
+L GND #PWR312
+U 1 1 4F561869
+P 7700 3050
+F 0 "#PWR312" H 7700 3050 30  0001 C CNN
+F 1 "GND" H 7700 2980 30  0001 C CNN
+	1    7700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2750 7700 3050
+Wire Wire Line
+	7600 2750 7600 3500
+Wire Wire Line
+	7600 3500 7250 3500
+Wire Wire Line
+	2700 1250 2900 1250
+Wire Wire Line
+	2900 1250 2900 700 
+Connection ~ 9550 1800
+Wire Wire Line
+	9550 1800 9550 1650
+Wire Wire Line
+	9600 1800 9500 1800
+Wire Wire Line
+	9600 1800 9600 2000
+Wire Wire Line
+	10100 2000 10100 1800
+Wire Wire Line
+	9800 1800 9800 2000
+Wire Wire Line
+	9900 2800 9900 4100
+Wire Wire Line
+	9900 4100 7250 4100
+Wire Wire Line
+	9700 2800 9700 3900
+Wire Wire Line
+	9700 3900 7250 3900
+Wire Wire Line
+	9500 2800 9500 3700
+Wire Wire Line
+	9500 3700 7250 3700
+Wire Wire Line
+	4200 1550 4200 1350
+Wire Wire Line
+	4200 1550 2700 1550
+Wire Wire Line
+	2700 1350 3600 1350
+Connection ~ 4200 700 
+Wire Wire Line
+	4200 750  4200 700 
+Connection ~ 3100 1350
+Wire Wire Line
+	3100 1250 3100 1350
+Wire Wire Line
+	3300 750  3300 700 
+Wire Wire Line
+	4100 1000 4100 1350
+Wire Wire Line
+	4100 1350 4000 1350
+Wire Wire Line
+	3800 1050 3800 700 
+Wire Wire Line
+	3800 3900 4300 3900
+Wire Wire Line
+	2500 4100 4300 4100
+Wire Wire Line
+	3350 6850 4350 6850
+Wire Wire Line
+	3800 6250 3800 6050
+Wire Wire Line
+	1500 7050 1500 7350
+Connection ~ 1150 6400
+Wire Wire Line
+	1500 6650 1500 6400
+Wire Wire Line
+	1500 6400 1150 6400
+Wire Wire Line
+	3350 3900 3350 3800
+Wire Wire Line
+	3350 3800 4300 3800
+Wire Wire Line
+	4300 3600 3700 3600
+Wire Wire Line
+	4150 6500 4150 6750
+Wire Wire Line
+	4150 6750 4350 6750
+Wire Wire Line
+	5550 6950 6000 6950
+Wire Wire Line
+	4350 6950 4150 6950
+Wire Wire Line
+	4150 6950 4150 7150
+Wire Wire Line
+	4300 3700 3350 3700
+Wire Wire Line
+	3350 3700 3350 3450
+Wire Wire Line
+	4300 3500 3700 3500
+Wire Wire Line
+	1150 6650 1150 6150
+Wire Wire Line
+	1150 7050 1150 7350
+Wire Wire Line
+	3800 6950 3800 6750
+Connection ~ 3800 6850
+Wire Wire Line
+	3800 7350 3800 7550
+Wire Wire Line
+	2500 4200 4300 4200
+Wire Wire Line
+	3800 4000 4300 4000
+Wire Wire Line
+	4600 1050 4600 700 
+Connection ~ 4600 700 
+Wire Wire Line
+	4200 1350 4400 1350
+Wire Wire Line
+	4800 1350 4900 1350
+Wire Wire Line
+	4900 1350 4900 1000
+Wire Wire Line
+	3100 700  3100 750 
+Wire Wire Line
+	4100 1300 4200 1300
+Wire Wire Line
+	4200 1300 4200 1250
+Connection ~ 4100 1300
+Wire Wire Line
+	4900 1300 5000 1300
+Wire Wire Line
+	5000 1300 5000 1250
+Connection ~ 4900 1300
+Wire Wire Line
+	5000 750  5000 700 
+Connection ~ 5000 700 
+Wire Wire Line
+	3300 1550 3300 1250
+Connection ~ 3300 1550
+Wire Wire Line
+	7250 3800 9600 3800
+Wire Wire Line
+	9600 3800 9600 2800
+Wire Wire Line
+	7250 4000 9800 4000
+Wire Wire Line
+	9800 4000 9800 2800
+Wire Wire Line
+	7250 4200 10000 4200
+Wire Wire Line
+	10000 4200 10000 1900
+Wire Wire Line
+	10000 1900 9900 1900
+Wire Wire Line
+	9900 1900 9900 2000
+Wire Wire Line
+	9700 2000 9700 1800
+Wire Wire Line
+	9700 1800 10100 1800
+Connection ~ 9800 1800
+Wire Wire Line
+	9500 1800 9500 2000
+Wire Wire Line
+	3800 700  5150 700 
+Wire Wire Line
+	3300 700  2900 700 
+Connection ~ 3100 700 
+Wire Wire Line
+	2700 1450 3000 1450
+Wire Wire Line
+	3000 1450 3000 1700
+Wire Wire Line
+	7250 3600 7800 3600
+Wire Wire Line
+	7800 3600 7800 2750
+$Comp
+L CONN_3 P303
+U 1 1 4F561858
+P 7700 2400
+F 0 "P303" V 7650 2400 50  0000 C CNN
+F 1 "ANALOG" V 7750 2400 40  0000 C CNN
+	1    7700 2400
+	0    -1   -1   0   
+$EndComp
+Text Label 2950 700  0    60   ~ 0
+I2CVCC
+$Comp
+L GND #PWR304
+U 1 1 4EEB5C4C
+P 3000 1700
+F 0 "#PWR304" H 3000 1700 30  0001 C CNN
+F 1 "GND" H 3000 1630 30  0001 C CNN
+	1    3000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P301
+U 1 1 4EEB5C31
+P 2350 1400
+F 0 "P301" V 2300 1400 50  0000 C CNN
+F 1 "EXTCTL" V 2400 1400 50  0000 C CNN
+	1    2350 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR314
+U 1 1 4EEB5666
+P 10100 2000
+F 0 "#PWR314" H 10100 2000 30  0001 C CNN
+F 1 "GND" H 10100 1930 30  0001 C CNN
+	1    10100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR313
+U 1 1 4EEB5662
+P 9550 1650
+F 0 "#PWR313" H 9550 1610 30  0001 C CNN
+F 1 "+3.3V" H 9550 1760 30  0000 C CNN
+	1    9550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_5X2 P302
+U 1 1 4EEB506E
+P 9700 2400
+F 0 "P302" H 9700 2700 60  0000 C CNN
+F 1 "ROTENC" V 9700 2400 50  0000 C CNN
+	1    9700 2400
+	0    -1   -1   0   
+$EndComp
+Text Label 2750 1350 0    60   ~ 0
+SDA1
+Text Label 2750 1550 0    60   ~ 0
+SCL1
+$Comp
+L R R305
+U 1 1 4EEB4FFB
+P 5000 1000
+F 0 "R305" V 5080 1000 50  0000 C CNN
+F 1 "4.7k" V 5000 1000 50  0000 C CNN
+	1    5000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R304
+U 1 1 4EEB4FC1
+P 4200 1000
+F 0 "R304" V 4280 1000 50  0000 C CNN
+F 1 "4.7k" V 4200 1000 50  0000 C CNN
+	1    4200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R302
+U 1 1 4EEB4FAC
+P 3300 1000
+F 0 "R302" V 3380 1000 50  0000 C CNN
+F 1 "4.7k" V 3300 1000 50  0000 C CNN
+	1    3300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R301
+U 1 1 4EEB4F9E
+P 3100 1000
+F 0 "R301" V 3180 1000 50  0000 C CNN
+F 1 "4.7k" V 3100 1000 50  0000 C CNN
+	1    3100 1000
+	1    0    0    -1  
+$EndComp
+Text Label 4100 1000 3    60   ~ 0
+SDA
+Text Label 4900 1000 3    60   ~ 0
+SCL
+$Comp
+L +3.3V #PWR311
+U 1 1 4EEB4EBD
+P 5150 700
+F 0 "#PWR311" H 5150 660 30  0001 C CNN
+F 1 "+3.3V" H 5150 810 30  0000 C CNN
+	1    5150 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L MOSFET_N Q302
+U 1 1 4EEB4E90
+P 4600 1250
+F 0 "Q302" H 4610 1420 60  0000 R CNN
+F 1 "2N7002" H 4610 1100 60  0000 R CNN
+	1    4600 1250
+	0    -1   1    0   
+$EndComp
+$Comp
+L MOSFET_N Q301
+U 1 1 4EEB4E6F
+P 3800 1250
+F 0 "Q301" H 3810 1420 60  0000 R CNN
+F 1 "2N7002" H 3810 1100 60  0000 R CNN
+	1    3800 1250
+	0    -1   1    0   
+$EndComp
+Text Label 3800 4000 0    60   ~ 0
+SDA
+Text Label 3800 3900 0    60   ~ 0
+SCL
+Text Label 7900 3700 2    60   ~ 0
+ROTC
+Text Label 7900 3800 2    60   ~ 0
+ROTB
+Text Label 7900 3900 2    60   ~ 0
+ROTA
+Text Label 7900 4000 2    60   ~ 0
+ENCLATCH
+Text Label 7900 4100 2    60   ~ 0
+ENCSCK
+Text Label 7900 4200 2    60   ~ 0
+ENCDATA
+Text HLabel 2500 4200 0    60   Output ~ 0
+FCONTROL
+Text HLabel 2500 4100 0    60   Output ~ 0
+LCONTROL
+$Comp
+L GND #PWR308
+U 1 1 4EEA2DE6
+P 3800 7550
+F 0 "#PWR308" H 3800 7550 30  0001 C CNN
+F 1 "GND" H 3800 7480 30  0001 C CNN
+	1    3800 7550
+	1    0    0    -1  
+$EndComp
+Text Label 3350 6850 0    60   ~ 0
+~RESET
+$Comp
+L C C303
+U 1 1 4EEA2DD5
+P 3800 7150
+F 0 "C303" H 3850 7250 50  0000 L CNN
+F 1 "100n" H 3850 7050 50  0000 L CNN
+	1    3800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR307
+U 1 1 4EEA2DD3
+P 3800 6050
+F 0 "#PWR307" H 3800 6010 30  0001 C CNN
+F 1 "+3.3V" H 3800 6160 30  0000 C CNN
+	1    3800 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R303
+U 1 1 4EEA2DCD
+P 3800 6500
+F 0 "R303" V 3880 6500 50  0000 C CNN
+F 1 "4.7K" V 3800 6500 50  0000 C CNN
+	1    3800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR303
+U 1 1 4EEA2DB8
+P 1500 7350
+F 0 "#PWR303" H 1500 7350 30  0001 C CNN
+F 1 "GND" H 1500 7280 30  0001 C CNN
+	1    1500 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR302
+U 1 1 4EEA2DB3
+P 1150 7350
+F 0 "#PWR302" H 1150 7350 30  0001 C CNN
+F 1 "GND" H 1150 7280 30  0001 C CNN
+	1    1150 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR301
+U 1 1 4EEA2DAC
+P 1150 6150
+F 0 "#PWR301" H 1150 6110 30  0001 C CNN
+F 1 "+3.3V" H 1150 6260 30  0000 C CNN
+	1    1150 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CPOL-12 C302
+U 1 1 4EEA2DA3
+P 1500 6850
+F 0 "C302" H 1550 6950 50  0000 L CNN
+F 1 "10u" H 1550 6750 50  0000 L CNN
+	1    1500 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C301
+U 1 1 4EEA2D9D
+P 1150 6850
+F 0 "C301" H 1200 6950 50  0000 L CNN
+F 1 "100n" H 1200 6750 50  0000 L CNN
+	1    1150 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR306
+U 1 1 4EEA2D92
+P 3350 3900
+F 0 "#PWR306" H 3350 3900 30  0001 C CNN
+F 1 "GND" H 3350 3830 30  0001 C CNN
+	1    3350 3900
+	1    0    0    -1  
+$EndComp
+Text Label 3700 3500 0    60   ~ 0
+~RESET
+Text Label 3700 3600 0    60   ~ 0
+BKGD
+$Comp
+L +3.3V #PWR305
+U 1 1 4EEA2D77
+P 3350 3450
+F 0 "#PWR305" H 3350 3410 30  0001 C CNN
+F 1 "+3.3V" H 3350 3560 30  0000 C CNN
+	1    3350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR309
+U 1 1 4EEA2D69
+P 4150 6500
+F 0 "#PWR309" H 4150 6460 30  0001 C CNN
+F 1 "+3.3V" H 4150 6610 30  0000 C CNN
+	1    4150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR310
+U 1 1 4EEA2D62
+P 4150 7150
+F 0 "#PWR310" H 4150 7150 30  0001 C CNN
+F 1 "GND" H 4150 7080 30  0001 C CNN
+	1    4150 7150
+	1    0    0    -1  
+$EndComp
+Text Label 6000 6950 2    60   ~ 0
+BKGD
+$Comp
+L BKGDHDR J301
+U 1 1 4EEA2D4C
+P 4950 6700
+F 0 "J301" H 4700 7100 60  0000 C CNN
+F 1 "BKGDHDR" H 4850 6600 60  0000 C CNN
+	1    4950 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L MC9S08QG8CPBE U301
+U 1 1 4EEA2D41
+P 5750 3850
+F 0 "U301" H 4650 4350 60  0000 C CNN
+F 1 "MC9S08QG8CPBE" H 5000 3300 60  0000 C CNN
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

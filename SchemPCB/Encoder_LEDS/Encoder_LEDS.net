@@ -1,0 +1,351 @@
+# EESchema Netlist Version 1.1 created  Seg 19 Dez 2011 13:04:37 BRT
+(
+ ( /4EA2D615 $noname  C102 100n {Lib=C}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /4EA2D2D9 $noname  C101 10u {Lib=CPOL-12}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /4EA2D265 $noname  P101 CONN_8 {Lib=CONN_10}
+  (    1 GND )
+  (    2 /DATA )
+  (    3 GND )
+  (    4 /SCK )
+  (    5 GND )
+  (    6 /LATCH )
+  (    7 VCC )
+  (    8 /ROTA )
+  (    9 VCC )
+  (   10 /ROTB )
+ )
+ ( /4EA2D1DE $noname  R111 10k {Lib=R}
+  (    1 VCC )
+  (    2 /ROTB )
+ )
+ ( /4EA2D1C5 $noname  R109 10k {Lib=R}
+  (    1 VCC )
+  (    2 /ROTA )
+ )
+ ( /4EA2D1A8 $noname  X101 ROTENC {Lib=ALPS-EC12E2420404}
+  (    A /ROTB )
+  (    B /ROTA )
+  (    C GND )
+ )
+ ( /4EA2CF56 $noname  R108 4.7k {Lib=R}
+  (    1 VCC )
+  (    2 N-000024 )
+ )
+ ( /4EA2CF2D $noname  C103 100n {Lib=C}
+  (    1 N-000024 )
+  (    2 GND )
+ )
+ ( /4EA2CDFC $noname  U101 74HC595 {Lib=74HC595}
+  (    1 /LED1 )
+  (    2 /LED2 )
+  (    3 /LED3 )
+  (    4 /LED4 )
+  (    5 /LED5 )
+  (    6 /LED6 )
+  (    7 /LED7 )
+  (    8 GND )
+  (    9 ? )
+  (   10 N-000024 )
+  (   11 /SCK )
+  (   12 /LATCH )
+  (   13 GND )
+  (   14 /DATA )
+  (   15 ? )
+  (   16 VCC )
+ )
+ ( /4EA2CDCE $noname  R107 R {Lib=R}
+  (    1 /LED7 )
+  (    2 N-000021 )
+ )
+ ( /4EA2CDC9 $noname  R106 R {Lib=R}
+  (    1 /LED6 )
+  (    2 N-000012 )
+ )
+ ( /4EA2CDC7 $noname  R105 R {Lib=R}
+  (    1 /LED5 )
+  (    2 N-000013 )
+ )
+ ( /4EA2CDC4 $noname  R104 R {Lib=R}
+  (    1 /LED4 )
+  (    2 N-000014 )
+ )
+ ( /4EA2CDC1 $noname  R103 R {Lib=R}
+  (    1 /LED3 )
+  (    2 N-000015 )
+ )
+ ( /4EA2CDBE $noname  R102 R {Lib=R}
+  (    1 /LED2 )
+  (    2 N-000016 )
+ )
+ ( /4EA2CDBB $noname  R101 R {Lib=R}
+  (    1 /LED1 )
+  (    2 N-000017 )
+ )
+ ( /4EA2CD8F $noname  D107 LED {Lib=LED}
+  (    1 N-000021 )
+  (    2 GND )
+ )
+ ( /4EA2CD8D $noname  D106 LED {Lib=LED}
+  (    1 N-000012 )
+  (    2 GND )
+ )
+ ( /4EA2CD8A $noname  D105 LED {Lib=LED}
+  (    1 N-000013 )
+  (    2 GND )
+ )
+ ( /4EA2CD85 $noname  D104 LED {Lib=LED}
+  (    1 N-000014 )
+  (    2 GND )
+ )
+ ( /4EA2CD83 $noname  D103 LED {Lib=LED}
+  (    1 N-000015 )
+  (    2 GND )
+ )
+ ( /4EA2CD7F $noname  D102 LED {Lib=LED}
+  (    1 N-000016 )
+  (    2 GND )
+ )
+ ( /4EA2CD78 $noname  D101 LED {Lib=LED}
+  (    1 N-000017 )
+  (    2 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C102
+ SM*
+ C?
+ C1-1
+$endlist
+$component C101
+ CP*
+ SM*
+$endlist
+$component R111
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R109
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R108
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C103
+ SM*
+ C?
+ C1-1
+$endlist
+$component R107
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R106
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R105
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R104
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R103
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R102
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R101
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component D107
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D106
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D105
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D104
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D103
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D102
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D101
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "GND" "GND"
+ C102 2
+ D102 2
+ C103 2
+ U101 8
+ D101 2
+ C101 2
+ D103 2
+ D104 2
+ D105 2
+ D106 2
+ U101 13
+ D107 2
+ P101 1
+ P101 3
+ P101 5
+ X101 C
+Net 2 "/ROTB" "ROTB"
+ P101 10
+ R111 2
+ X101 A
+Net 3 "/LATCH" "LATCH"
+ P101 6
+ U101 12
+Net 4 "/LED1" "LED1"
+ U101 1
+ R101 1
+Net 5 "/DATA" "DATA"
+ P101 2
+ U101 14
+Net 6 "/SCK" "SCK"
+ U101 11
+ P101 4
+Net 7 "/LED5" "LED5"
+ U101 5
+ R105 1
+Net 8 "/LED4" "LED4"
+ R104 1
+ U101 4
+Net 9 "/LED3" "LED3"
+ U101 3
+ R103 1
+Net 10 "/LED2" "LED2"
+ R102 1
+ U101 2
+Net 11 "/LED6" "LED6"
+ U101 6
+ R106 1
+Net 12 "" ""
+ R106 2
+ D106 1
+Net 13 "" ""
+ R105 2
+ D105 1
+Net 14 "" ""
+ D104 1
+ R104 2
+Net 15 "" ""
+ R103 2
+ D103 1
+Net 16 "" ""
+ R102 2
+ D102 1
+Net 17 "" ""
+ R101 2
+ D101 1
+Net 20 "/LED7" "LED7"
+ U101 7
+ R107 1
+Net 21 "" ""
+ R107 2
+ D107 1
+Net 22 "/ROTA" "ROTA"
+ P101 8
+ R109 2
+ X101 B
+Net 23 "VCC" "VCC"
+ C102 1
+ R111 1
+ R109 1
+ P101 9
+ R108 1
+ P101 7
+ C101 1
+ U101 16
+Net 24 "" ""
+ U101 10
+ C103 1
+ R108 2
+}
+#End

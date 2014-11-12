@@ -1,0 +1,423 @@
+Cmp-Mod V01 Created by CvPCB (2011-08-12 BZR 3067)-stable date = Qui 19 Abr 2012 11:33:53 BRT
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEB820C;
+Reference = BR401;
+ValeurCmp = 2WXX;
+IdModule  = Diodos-KBU;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEA2D9D;
+Reference = C301;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEA2DA3;
+Reference = C302;
+ValeurCmp = 10u;
+IdModule  = Capacitores-TantaloB;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEA2DD5;
+Reference = C303;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2A50;
+Reference = C401;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2784;
+Reference = C402;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2AF4;
+Reference = C403;
+ValeurCmp = 10u;
+IdModule  = Capacitores-TantaloB;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEB574A;
+Reference = C404;
+ValeurCmp = 470p;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2B48;
+Reference = C405;
+ValeurCmp = 100u;
+IdModule  = Capacitores-Generic8x13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA278D;
+Reference = C406;
+ValeurCmp = 10u;
+IdModule  = Capacitores-TantaloB;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2C93;
+Reference = C407;
+ValeurCmp = 1000u;
+IdModule  = Capacitores-Generic13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2C9F;
+Reference = C408;
+ValeurCmp = 1000u;
+IdModule  = Capacitores-Generic13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2968;
+Reference = C409;
+ValeurCmp = 100u;
+IdModule  = Capacitores-Generic8x13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2CA2;
+Reference = C410;
+ValeurCmp = 1000u;
+IdModule  = Capacitores-Generic13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2CA5;
+Reference = C411;
+ValeurCmp = 1000u;
+IdModule  = Capacitores-Generic13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEAB414;
+Reference = C412;
+ValeurCmp = 470p;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2911;
+Reference = C413;
+ValeurCmp = 470u;
+IdModule  = Capacitores-Generic8x13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA289C;
+Reference = C414;
+ValeurCmp = 100u;
+IdModule  = Capacitores-Generic8x13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4F9021D4;
+Reference = C415;
+ValeurCmp = 10n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4F9021CD;
+Reference = C416;
+ValeurCmp = 100n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2A99;
+Reference = D401;
+ValeurCmp = 1n4148;
+IdModule  = Diodos-SOD123-12;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2927;
+Reference = D402;
+ValeurCmp = 1N5819;
+IdModule  = Diodos-SOD123-12;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEA2D4C;
+Reference = J301;
+ValeurCmp = BKGDHDR;
+IdModule  = Pinos-AVRISP_HDR-0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA28F0;
+Reference = L401;
+ValeurCmp = 68u;
+IdModule  = Indutores-PM5022;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2952;
+Reference = L402;
+ValeurCmp = 1u;
+IdModule  = Indutores-LQH32C;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB5A66;
+Reference = P201;
+ValeurCmp = CASEFAN;
+IdModule  = Conectores-MTA0.1_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB4D7C;
+Reference = P202;
+ValeurCmp = LED;
+IdModule  = Conectores-MTA0.1_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB55B5;
+Reference = P203;
+ValeurCmp = LEDFAN;
+IdModule  = Conectores-MTA0.1_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB5C31;
+Reference = P301;
+ValeurCmp = EXTCTL;
+IdModule  = Pinos-4x1_1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB506E;
+Reference = P302;
+ValeurCmp = ROTENC;
+IdModule  = Conectores-IDC10;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4F561858;
+Reference = P303;
+ValeurCmp = ANALOG;
+IdModule  = Pinos-3x1_0.8MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEB5A0F;
+Reference = P401;
+ValeurCmp = REDE;
+IdModule  = Conectores-LumbergKRM2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2CEE;
+Reference = P402;
+ValeurCmp = PRI;
+IdModule  = Conectores-LumbergKRM2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2CF2;
+Reference = P403;
+ValeurCmp = SEC;
+IdModule  = Conectores-LumbergKRM2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEB5C8A;
+Reference = P404;
+ValeurCmp = TST;
+IdModule  = Misc-TestpointPTH1.0;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB4E6F;
+Reference = Q301;
+ValeurCmp = 2N7002;
+IdModule  = Transistores-SOT23GSD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB4E90;
+Reference = Q302;
+ValeurCmp = 2N7002;
+IdModule  = Transistores-SOT23GSD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4F8EEE05;
+Reference = Q402;
+ValeurCmp = TIP31C;
+IdModule  = Transistores-TO220_VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB5595;
+Reference = R201;
+ValeurCmp = 10k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB4C53;
+Reference = R202;
+ValeurCmp = 1k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB55C4;
+Reference = R203;
+ValeurCmp = 10k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB5591;
+Reference = R204;
+ValeurCmp = 1k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB4F9E;
+Reference = R301;
+ValeurCmp = 4.7k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB4FAC;
+Reference = R302;
+ValeurCmp = 4.7k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEA2DCD;
+Reference = R303;
+ValeurCmp = 4.7K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB4FC1;
+Reference = R304;
+ValeurCmp = 4.7k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEB4FFB;
+Reference = R305;
+ValeurCmp = 4.7k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2AE3;
+Reference = R401;
+ValeurCmp = 240;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEABE9A;
+Reference = R402;
+ValeurCmp = 10k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA28E4;
+Reference = R403;
+ValeurCmp = 6.34k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA28C1;
+Reference = R404;
+ValeurCmp = 1k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2886;
+Reference = R405;
+ValeurCmp = 0.1;
+IdModule  = Resistores-SM2010;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2ACF;
+Reference = RV401;
+ValeurCmp = POT;
+IdModule  = Resistores-Bourns3250W;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB4C01;
+Reference = U201;
+ValeurCmp = FDC6420C;
+IdModule  = Transistores-SUPERSOT6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEB4BD4/4EEB5550;
+Reference = U202;
+ValeurCmp = FDC6420C;
+IdModule  = Transistores-SUPERSOT6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2D2A/4EEA2D41;
+Reference = U301;
+ValeurCmp = MC9S08QG8CPBE;
+IdModule  = CircuitosIntegrados-TSSOP16;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2A7E;
+Reference = U401;
+ValeurCmp = LM317;
+IdModule  = CircuitosIntegrados-DPAK;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEB5717;
+Reference = U402;
+ValeurCmp = MIC5205;
+IdModule  = CircuitosIntegrados-SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2848;
+Reference = U403;
+ValeurCmp = MC34063EC;
+IdModule  = CircuitosIntegrados-SOIC8;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEA2747/4EEA2BFC;
+Reference = VR401;
+ValeurCmp = VR;
+IdModule  = Resistores-VARS10K250;
+EndCmp
+
+EndListe

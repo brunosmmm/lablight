@@ -1,0 +1,147 @@
+* Biblioteca de componentes para o laboratorio de Eletronica I
+*
+* Componentes disponíveis:
+*
+* LM124/324 (amplificador operacional)
+* 2N3904    (transistor bipolar npn)
+* 2N3906    (transistor bipolar pnp)
+* LM3045    (Transistor integrado)
+* 1N4148    (diodo rápido)
+* 1N914     (diodo rápido) 
+* 1N4001    (diodo de potência)
+* M4007N    (transistor n do CD4007)
+* M4007P    (transistor p do CD4007)
+*
+*
+*----------------------------------------------------------------------------------
+* modelo do diodo 1N4148
+*
+.model D1N4148  D(Is=5.84n N=1.94 Rs=.7017 Xti=3 Eg=1.11 Cjo=.95p
++      M=.55 Vj=.75 Fc=.5 Bv=100 Ibv=100u Tt=11.07n)
+*
+*
+* Subcircuito do macromodelo do amplificador operational LM324
+* considerando alimentação de 5V
+* CONNECTIONS:   Entrada não inversora
+*                | Entrada inversora
+*                | | Alimentação positiva
+*                | | | Alimentação negativa
+*                | | | | Saída
+*                | | | | |
+.SUBCKT LM324    1 2 3 4 5
+*
+  C1   11 12 5.544E-12
+  C2    6  7 20.00E-12
+  DC    5 53 DX
+  DE   54  5 DX
+  DLP  90 91 DX
+  DLN  92 90 DX
+  DP    4  3 DX
+  EGND 99  0 POLY(2) (3,0) (4,0) 0 .5 .5
+  FB    7 99 POLY(5) VB VC VE VLP VLN 0 15.91E6 -20E6 20E6 20E6 -20E6
+  GA    6  0 11 12 125.7E-6
+  GCM   0  6 10 99 7.067E-9
+  IEE   3 10 DC 10.04E-6
+  HLIM 90  0 VLIM 1K
+  Q1   11  2 13 QX
+  Q2   12  1 14 QX
+  R2    6  9 100.0E3
+  RC1   4 11 7.957E3
+  RC2   4 12 7.957E3
+  RE1  13 10 2.773E3
+  RE2  14 10 2.773E3
+  REE  10 99 19.92E6
+  RO1   8  5 50
+  RO2   7 99 50
+  RP    3  4 30.31E3
+  VB    9  0 DC 0
+  VC 3 53 DC 2.100
+  VE   54  4 DC .6
+  VLIM  7  8 DC 0
+  VLP  91  0 DC 40
+  VLN   0 92 DC 40
+.MODEL DX D(IS=800.0E-18)
+.MODEL QX PNP(IS=800.0E-18 BF=250)
+.ENDS
+*
+*-----------------------------------------------------------------------------
+* Modelo do NPN
+.model 2N3904	NPN(Is=6.734f Xti=3 Eg=1.11 Vaf=74.03 Bf=416.4 Ne=1.259
++		Ise=6.734f Ikf=66.78m Xtb=1.5 Br=.7371 Nc=2 Isc=0 Ikr=0 Rc=1
++		Cjc=3.638p Mjc=.3085 Vjc=.75 Fc=.5 Cje=4.493p Mje=.2593 Vje=.75
++		Tr=239.5n Tf=301.2p Itf=.4 Vtf=4 Xtf=2 Rb=10)
+*		National	pid=23		case=TO92
+*		88-09-08 bam	creation
+***************************************************
+* Modelo do PNP
+.model 2N3906	PNP(Is=1.41f Xti=3 Eg=1.11 Vaf=18.7 Bf=180.7 Ne=1.5 Ise=0
++		Ikf=80m Xtb=1.5 Br=4.977 Nc=2 Isc=0 Ikr=0 Rc=2.5 Cjc=9.728p
++		Mjc=.5776 Vjc=.75 Fc=.5 Cje=8.063p Mje=.3677 Vje=.75 Tr=33.42n
++		Tf=179.3p Itf=.4 Vtf=4 Xtf=6 Rb=10)
+*
+*-----------------------------------------------------------------------------
+*Modelo do diodo 1N914
+.model	D1N914	D(Is=0.1p Rs=16 CJO=2p Tt=12n Bv=100 Ibv=0.1p)
+*
+*
+*-----------------------------------------------------------------------------
+*Modelo dos transistores  do LM/CA3045/3046
+.model LM3045 NPN
++ ( IS=10.0E-15
++ BF =145.7E+00
++ VAF=1.00E+02
++ IKF=46.700E-03
++ ISE=114.286E-15
++ NE=1.480E+00
++ BR=0.1000E+00
++ VAR=1.000E+02
++ IKR=10.00E-03
++ ISC=10.005E-15
++ RC=10.000E+00
++ CJE=1.02E-12
++ MJE=0.336E-00
++ CJC=991.71E-15
++ MJC=0.333E-00
++ TF=277.01E-12
++ XTF=309.38E+00
++ VTF=16.37E+00
++ ITF=1.750E-00
++ TR=10.000E-09
++ XTI=3.000E+00
++ EG=1.110E+00
++ XTB=0.000E+00
++ NC=2.000E+00
++ VJC=0.7500E-00
++ FC=5.000E-01
++ VJE=0.750E-00
++ PTF=0.000E+00
++ RE=0.0E+00
++ RB=0.00E+00)
+*
+*----------------------------------------------------------------------
+*Modelo do diodo 1N4001
+.MODEL D1N4001 D IS=29.5E-9 RS=73.5E-3 N=1.96 CJO=34.6P VJ=0.627
++M=0.461 BV=60 IBV=10U
+
+* CD4007 NMOS and PMOS transistor SPICE models
+
+* Typical - Typical Condition
+
+
+
+.model M4007N NMOS 
++ Level=1    Gamma= 0
++ Tox=1200n  Phi=.6     Rs=0      Kp=111u  Vto=2.0    Lambda=0.01
++ Rd=0       Cbd=2.0p   Cbs=2.0p  Pb=.8    Cgso=0.1p
++ Cgdo=0.1p  Is=16.64p
+
+*Deve ser chamado MXXXXXXX ND NG NS NB M4007N L=10u W=30u.
+
+
+.model M4007P PMOS 
++ Level=1    Gamma= 0
++ Tox=1200n  Phi=.6     Rs=0      Kp=55u  Vto=-1.5   Lambda=0.04
++ Rd=0       Cbd=4.0p   Cbs=4.0p  Pb=.8   Cgso=0.2p
++ Cgdo=0.2p  Is=16.64p
+
+*Deve ser chamado MXXXXXXX ND NG NS NB M4007N L=10u W=60u.
